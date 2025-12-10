@@ -3,8 +3,8 @@ workflows:
     name: EAS Android Build
     environment:
       node: latest
-      vars:
-        EXPO_TOKEN: $EXPO_TOKEN   
+      groups:
+        - expo       
     scripts:
       - name: Install dependencies
         script: |
