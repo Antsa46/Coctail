@@ -16,6 +16,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.makomaa.coctails",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -26,8 +27,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-     "extra": {
-      "API_BASE_URL": "https://www.thecocktaildb.com/api/json/v1/1"
+    "extra": {
+      "API_BASE_URL": "https://www.thecocktaildb.com/api/json/v1/1",
+      "eas": {
+        "projectId": "b8d3f5f3-2f3e-4c4e-9f4e-1a2b3c4d5e6f"
+      }
     }
   }
 }
