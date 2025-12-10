@@ -1,10 +1,10 @@
 {
   "cli": {
-    "version": ">=3.8.0"
+    "version": ">= 3.8.0"
   },
   "build": {
-    "android": {
-      "release": {
+    "release": {
+      "android": {
         "workflow": "managed",
         "buildType": "apk"
       }

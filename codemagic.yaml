@@ -4,7 +4,7 @@ workflows:
     environment:
       node: latest
       groups:
-        - expo       
+        - expo          
     scripts:
       - name: Install dependencies
         script: |
@@ -16,8 +16,7 @@ workflows:
 
       - name: Build APK using EAS
         script: |
-          # EAS lukee EXPO_TOKEN-ympäristömuuttujan automaattisesti
-          eas build --platform android --non-interactive --profile android
+          eas build --platform android --non-interactive --profile release
 
     artifacts:
       - "**/*.apk"
