@@ -2,17 +2,18 @@ workflows:
   EAS Android Build:
     name: EAS Android Build
     environment:
-      node: latest
       groups:
         - expo
+      node: latest
     scripts:
       - name: Install dependencies
         script: |
           npm install
-
-      - name: Install EAS CLI
-        script: |
           npm install -g eas-cli
+
+      - name: Login to Expo EAS
+        script: |
+          eas login --token $EXPO_TOKEN
 
       - name: Build APK using EAS
         script: |
