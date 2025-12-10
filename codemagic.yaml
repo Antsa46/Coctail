@@ -1,11 +1,10 @@
-# File: codemagic.yaml
 workflows:
   EAS Android Build:
     name: EAS Android Build
     environment:
       node: latest
       groups:
-        - expo            
+        - expo
     scripts:
       - name: Install dependencies
         script: |
